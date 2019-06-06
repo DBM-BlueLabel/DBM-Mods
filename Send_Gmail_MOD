@@ -128,15 +128,17 @@ init: function() {
 action: function(cache) {
     const _this = this
     const data = cache.actions[cache.index];
-    const AddOns = this.getAddOns();
 	  const username = data.username;
     const password = data.password;
     const mailto = data.mailto;
     const subject = data.subject;
     const text = data.text;
     
+    const WrexMODS = _this.getWrexMods();
+		WrexMODS.CheckAndInstallNodeModule('game-server-query');
+    
     //Big thank to W3schools.com for this code.
-  	const nodemailer = AddOns.require('nodemailer');
+  	const nodemailer = WrexMODS.require('nodemailer');
 
     var transporter = nodemailer.createTransport({
       service: 'gmail',
