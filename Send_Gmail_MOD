@@ -135,7 +135,7 @@ action: function(cache) {
     const text = data.text;
     
     const WrexMODS = _this.getWrexMods();
-		WrexMODS.CheckAndInstallNodeModule('game-server-query');
+		WrexMODS.CheckAndInstallNodeModule('nodemailer');
     
     //Big thank to W3schools.com for this code.
   	const nodemailer = WrexMODS.require('nodemailer');
