@@ -128,11 +128,11 @@ init: function() {
 action: function(cache) {
     const _this = this
     const data = cache.actions[cache.index];
-	  const username = data.username;
-    const password = data.password;
-    const mailto = data.mailto;
-    const subject = data.subject;
-    const text = data.text;
+	  const username = this.evalMessage(data.username, cache);
+    const password = this.evalMessage(data.password, cache);
+    const mailto = this.evalMessage(data.mailto, cache);
+    const subject = this.evalMessage(data.subject, cache);
+    const text = this.evalMessage(data.text, cache);
     
     const WrexMODS = _this.getWrexMods();
 		WrexMODS.CheckAndInstallNodeModule('nodemailer');
