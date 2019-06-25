@@ -74,7 +74,8 @@ module.exports = {
         <u>Helpful Information</u><br>
         - To get an api key visit <a href="https://pastebin.com/api#1">pastebin api page</a>.<br>
         - To get all the supported formats <a href="https://pastebin.com/api#5">click here</a>.<br>
-        - If you chose file, write down the file location for ex './example.txt'.
+        - To see the paste limit and other information <a href="https://pastebin.com/faq">pastebin FAQ</a>.<br>
+        - If you chose file, write down the file location for ex './example.txt'.<br><br>
         </div><br>
         <div id="divapikey" style="float: left; width: 100%;">
 		    API Key:<br>
